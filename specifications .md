@@ -1,5 +1,3 @@
-# DETAILS.md
-
 # Détails des Phases du Projet
 
 ## Projet
