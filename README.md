@@ -1,7 +1,7 @@
-# Inter-Airport Stock & Request Management
+# AI-Powered Predictive Maintenance System (Virtual AI Technician)
 
-Moroccan airports mutual aid and inventory management system for technical maintenance teams.
+Autonomous predictive maintenance and hardware anomaly detection platform for enterprise IT infrastructure.
 
 ## Objectives
-- **Primary:** Resolve the core problem of inter-airport stock and request management.
-- **AI Engineering (Advanced):** Implement complex AI architectures and operational intelligence pipelines (e.g., stockout prediction, smart donor-site ranking, NLP catalog matching, and anomaly detection) to provide powerful, data-driven solutions on top of the core workflows.
+- **Primary:** Eliminate reliance on manual monitoring and external scraping by enabling direct hardware log ingestion and automated system health tracking.
+- **AI Engineering (Advanced):** Implement predictive AI models and time-series anomaly detection algorithms to forecast hardware failures (e.g., storage degradation, system log errors, and device performance bottlenecks) and deliver actionable maintenance recommendations before downtime occurs.
