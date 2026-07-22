@@ -31,3 +31,14 @@ rag-it-maintenance/
 ├── docker-compose.yml      # Multi-container orchestration (PostgreSQL, InfluxDB, ChromaDB)
 ├── Makefile                # Shortcut CLI commands for development
 └── README.md
+
+## 3. Recommended Git Commit Conventions (Best Practice)
+
+When pushing future features throughout your project timeline, enforce **Conventional Commits** for clean team tracking[cite: 1]:
+
+| Prefix | Usage Example |
+| :--- | :--- |
+| `feat:` | `feat(agent): add WMI parser for SMART disk health` |
+| `fix:` | `fix(backend): patch InfluxDB write timeout during CPU spikes` |
+| `docs:` | `docs(rag): upload vendor manuals to vector index directory` |
+| `ci:` | `ci: add GitHub Actions workflow for pytest and linting` |
