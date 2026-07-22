@@ -31,7 +31,7 @@ rag-it-maintenance/
 ├── docker-compose.yml      # Multi-container orchestration (PostgreSQL, InfluxDB, ChromaDB)
 ├── Makefile                # Shortcut CLI commands for development
 └── README.md
-
+```
 ## 3. Recommended Git Commit Conventions
 
 To maintain a clean and structured git history across the monorepo, follow the **Conventional Commits** standard:
