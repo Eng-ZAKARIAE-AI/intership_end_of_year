@@ -31,3 +31,18 @@ rag-it-maintenance/
 ├── docker-compose.yml      # Multi-container orchestration (PostgreSQL, InfluxDB, ChromaDB)
 ├── Makefile                # Shortcut CLI commands for development
 └── README.md
+```
+## 3. Recommended Git Commit Conventions
+
+To maintain a clean and structured git history across the monorepo, follow the **Conventional Commits** standard:
+
+| Prefix | Category | Scope Examples | Usage Example |
+| :--- | :--- | :--- | :--- |
+| `feat:` | New Feature | `agent`, `backend`, `rag`, `ui` | `feat(agent): add WMI parser for SMART disk health` |
+| `fix:` | Bug Fix | `backend`, `ml-engine`, `database` | `fix(backend): patch InfluxDB write timeout during CPU spikes` |
+| `docs:` | Documentation | `readme`, `architecture`, `rag` | `docs(rag): upload vendor manuals to vector index directory` |
+| `refactor:` | Code Refactoring | `agent`, `ml-engine`, `core` | `refactor(ml-engine): optimize Isolation Forest inference pipeline` |
+| `perf:` | Performance Improvements | `backend`, `vectorstore` | `perf(vectorstore): speed up ChromaDB semantic search queries` |
+| `test:` | Unit & Integration Tests | `backend`, `agent`, `ci` | `test(agent): add pytest cases for Windows Event log parsing` |
+| `ci:` | CI/CD Pipelines | `github-actions`, `docker` | `ci: add GitHub Actions workflow for pytest and linting` |
+| `chore:` | Maintenance & Dependencies | `repo`, `deps`, `docker` | `chore(deps): upgrade FastAPI and LangChain dependencies` |
