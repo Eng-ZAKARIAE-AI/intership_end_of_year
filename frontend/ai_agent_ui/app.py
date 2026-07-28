@@ -187,7 +187,7 @@ st.markdown("""
 # ---------------------------------------------------------------------------
 # NAVIGATION
 # ---------------------------------------------------------------------------
-col1, col2, col3, col4 = st.columns(4)
+col1, col2, col3, col4, col5 = st.columns(5)
 with col1:
     if st.button("🏠  Home", use_container_width=True):
         st.rerun()
@@ -200,6 +200,9 @@ with col3:
 with col4:
     if st.button("📝  System Logs", use_container_width=True):
         st.switch_page("pages/3_Logs.py")
+with col5:
+    if st.button("🚦  Traffic Gen", use_container_width=True):
+        st.switch_page("pages/4_Traffic_Generator.py")
 
 if st.session_state.get("show_ai", False):
     st.toast("AI Agent is ready to assist you!", icon="🤖")
@@ -304,6 +307,21 @@ with f3:
     """, unsafe_allow_html=True)
     if st.button("Open Logs →", use_container_width=True, key="open_logs"):
         st.switch_page("pages/3_Logs.py")
+
+st.write("")
+st.markdown('<div class="section-title">🚦 Monitoring Tools</div>', unsafe_allow_html=True)
+
+f4, _, _ = st.columns(3)
+with f4:
+    st.markdown("""
+    <div class="feature-card">
+        <div class="icon-badge blue" style="background-color: #fce7f3;">🚦</div>
+        <h3>Traffic Generator</h3>
+        <p>Generate simulated traffic patterns to test Prometheus metrics and Grafana monitoring.</p>
+    </div>
+    """, unsafe_allow_html=True)
+    if st.button("Open Generator →", use_container_width=True, key="open_traffic"):
+        st.switch_page("pages/4_Traffic_Generator.py")
 
 st.write("")
 st.caption(f"Dashboard loaded at {datetime.now().strftime('%H:%M:%S')}")
